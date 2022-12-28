@@ -20,7 +20,7 @@ const Blog = () => {
     const fetchData = () => {
         axios.get(`/blog/${name}`).then((response) => {
             setData(response.data.data)
-            console.log(response.data.data)
+            // console.log(response.data.data)
         })
     } 
 
@@ -38,7 +38,7 @@ const Blog = () => {
             console.log(response)
             setFormData({name : "", comment : ""})
             fetchData()
-            console.log(formData)
+            // console.log(formData)
         })
 
     }
