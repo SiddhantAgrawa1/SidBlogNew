@@ -6,7 +6,7 @@ const app = express()
 const path = require('path');
 const PORT = process.env.PORT || 8000;
 const bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded())
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname,'./client/build')))
 const Blog = require('./Models/models')
 
