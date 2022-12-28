@@ -3,10 +3,31 @@ require('dotenv').config()
 const mongoose = require('mongoose')
 // require('./db/conn.js')
 const app = express()
+const path = require('path');
+const PORT = process.env.PORT || 8000;
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded())
-
+app.use(express.static(path.join(__dirname,'./client/build')))
 const Blog = require('./Models/models')
+
+const connectDB = async () => {
+    try {
+      const conn = await mongoose.connect(process.env.DB);
+      console.log(`MongoDB Connected: ${conn.connection.host}`);
+    } catch (error) {
+      console.log(error);
+      process.exit(1);
+    }
+}
+
+  //Connect to the database before listening
+connectDB().then(() => {
+    app.listen(PORT, () => {
+        console.log("listening for requests");
+    })
+})
+
+
 
 app.get('/',async(req,res) => {
     res.send("Hello World");
@@ -34,16 +55,5 @@ app.post('/comment', async(req,res) => {
     }catch(error){
         res.status(500).json({data : ""})
     }
-})
-
-app.listen(8000, () => {
-    mongoose.connect(DB)
-    .then(() => {
-        console.log("Connected successfull to the database")
-    })
-    .catch((error) => {
-        console.log("Some error occured in database connection : ",error);
-    })
-    console.log("Server successfully started on 8000")
 })
 
