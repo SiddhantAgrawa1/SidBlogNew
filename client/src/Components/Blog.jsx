@@ -44,7 +44,7 @@ const Blog = () => {
     }
 
     return (
-        <>
+        <div className="blog-container">
         {data != "" ? 
             <div className="container article-container">
                 <h1 className="text-center heading">{data.title}</h1>
@@ -79,7 +79,7 @@ const Blog = () => {
             <Spinner animation="border" role="status">
             <span className="visually-hidden">Loading...</span>
           </Spinner>} 
-        </>
+        </div>
     )
 }
 

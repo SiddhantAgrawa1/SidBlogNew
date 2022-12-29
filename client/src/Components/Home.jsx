@@ -6,17 +6,17 @@ import '../css/home.css'
 
 const Home = () => {
     return(
-        <div>
+        <div className="Home">
             <Carousel >
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
           style={{"height": "300px"}} 
-          src={require("../static/slide1.jpeg")}
+          src={require("../static/slide11.jpeg")}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h2>Best Blogs</h2>
+          <h2 >Best Blogs</h2>
           <p>Lifestyle, Religion and Believe System</p>
           <Button variant="danger">Lifestyle</Button>{' '}
           <Button variant="primary">Religion</Button>{' '}
@@ -27,7 +27,7 @@ const Home = () => {
         <img
           className="d-block w-100"
           style={{"height": "300px"}} 
-          src={require("../static/slide2.jpeg")}
+          src={require("../static/slide21.jpeg")}
           alt="Second slide"
         />
         <Carousel.Caption>
