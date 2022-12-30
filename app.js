@@ -12,6 +12,7 @@ const Blog = require('./Models/models')
 
 const connectDB = async () => {
     try {
+      mongoose.set("strictQuery", false);
       const conn = await mongoose.connect(process.env.DB);
       console.log(`MongoDB Connected: ${conn.connection.host}`);
     } catch (error) {
@@ -29,11 +30,12 @@ connectDB().then(() => {
 
 // app.get("*",)
 
-app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname, "./client/build/index.html"))
-})
+// app.get('*',function(req,res){
+//     res.sendFile(path.join(__dirname, "./client/build/index.html"))
+// })
 
 app.get('/blog/:name', async(req,res) => {
+    // console.log(req.params)
     try{
         const param = String(req.params.name)
         param.replace("%20"," ")

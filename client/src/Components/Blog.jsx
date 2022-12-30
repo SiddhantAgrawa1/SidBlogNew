@@ -19,8 +19,8 @@ const Blog = () => {
 
     const fetchData = () => {
         axios.get(`/blog/${name}`).then((response) => {
+            console.log(response.data.data)
             setData(response.data.data)
-            // console.log(response.data.data)
         })
     } 
 
@@ -29,7 +29,7 @@ const Blog = () => {
     },[])
     
     const AddNewComment = async() => {
-        console.log(formData)
+        // console.log(formData)
         axios.post('/comment',{...formData, title : data.title}, {
             headers : {
                 'content-type': "application/x-www-form-urlencoded"
