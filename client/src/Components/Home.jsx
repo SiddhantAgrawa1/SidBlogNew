@@ -12,7 +12,7 @@ const Home = () => {
         <img
           className="d-block w-100"
           style={{"height": "300px"}} 
-          src={require("../static/slide11.jpeg")}
+          src={require("../static/slide1.jpeg")}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -27,7 +27,7 @@ const Home = () => {
         <img
           className="d-block w-100"
           style={{"height": "300px"}} 
-          src={require("../static/slide21.jpeg")}
+          src={require("../static/slide2.jpeg")}
           alt="Second slide"
         />
         <Carousel.Caption>
