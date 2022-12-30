@@ -27,7 +27,7 @@ const Home = () => {
         <img
           className="d-block w-100"
           style={{"height": "300px"}} 
-          src={require("../static/slide2.jpeg")}
+          src={require("../static/slide2.jpg")}
           alt="Second slide"
         />
         <Carousel.Caption>
