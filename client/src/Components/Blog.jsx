@@ -44,9 +44,9 @@ const Blog = () => {
     }
 
     return (
-        <div className="blog-container">
+        <div className="blog-container bg-light">
         {data != "" ? 
-            <div className="container article-container">
+            <div className="container article-container bg-white">
                 <h1 className="text-center heading">{data.title}</h1>
                 <pre className="article">{data.content}</pre>
                 <Form className="comment-form">

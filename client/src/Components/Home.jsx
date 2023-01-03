@@ -6,7 +6,7 @@ import '../css/home.css'
 
 const Home = () => {
     return(
-        <div className="Home">
+        <div className="Home bg-light">
             <Carousel >
       <Carousel.Item interval={1000}>
         <img
@@ -54,10 +54,10 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
             </Carousel>
-            <div className="container my-4">
+            <div className="container my-4 bg-light">
                 <div className="row mb-2">
                 <div className="col-md-6">
-                    <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-white">
                     <div className="col p-4 d-flex flex-column position-static">
                         <strong className="d-inline-block mb-2 text-primary">Religion</strong>
                         <h3 className="mb-0">Does god exist?</h3>
@@ -71,7 +71,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="col-md-6">
-                    <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div className="row g-0 border bg-white rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div className="col p-4 d-flex flex-column position-static">
                         <strong className="d-inline-block mb-2 text-success">Life</strong>
                         <h3 className="mb-0">Life is never easy</h3>
@@ -90,7 +90,7 @@ const Home = () => {
             <div className="container my-4">
         <div className="row mb-2">
           <div className="col-md-6">
-            <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div className="row g-0 border rounded bg-white overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div className="col p-4 d-flex flex-column position-static">
                 <strong className="d-inline-block mb-2 text-primary">World</strong>
                 <h3 className="mb-0">The Fake Illusion of Dharma</h3>
@@ -106,7 +106,7 @@ const Home = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div className="row g-0 border rounded bg-white overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div className="col p-4 d-flex flex-column position-static">
                 <strong className="d-inline-block mb-2 text-success">Life Style</strong>
                 <h3 className="mb-0">Conquer your first enemy</h3>
