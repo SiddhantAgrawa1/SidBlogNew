@@ -9,7 +9,7 @@ The webapp developed using MERN stack.
 
 The webapp is hosted on Cyclic.sh
 
-Please fill free to share your thoughts on my blog site and also through my email id mentioned in my profile.
+Please feel free to share your thoughts on my blog site and also through my email id mentioned in my profile.
 
 Here is the link to check the live working of the website.
 
